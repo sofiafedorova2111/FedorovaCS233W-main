@@ -1,7 +1,7 @@
 
 const sanitizeHTML = require('sanitize-html');
 
-const sanitize = (request, response, next) => {
+const sanitizePar = (request, response, next) => {
     if (req.params) {
         Object.keys(req.params).forEach((key) => {
         req.params[key] = sanitizeHTML(req.params[key]);
@@ -12,4 +12,4 @@ const sanitize = (request, response, next) => {
       next();
     };
     
-    module.exports = sanitize;
+    module.exports = sanitizePar;

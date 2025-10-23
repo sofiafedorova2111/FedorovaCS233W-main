@@ -2,17 +2,16 @@
 
 ## Name: Sofia Fedorova
 
-### Date: 10/07/2025
+### Date: 10/20/2025
  
-  *Description: Shared shopping list application.* 
-
-  Dependencies that are required :
- - Node.js
- - Express.js
-
- - To install: 
-    Node.js: node-v -> npm -v
-
-    Express.js: Create a project folder -> npm init -y -> npm install express.
-
- - To run a server: node server.js
+  *Description: Tests to check the middleware.* 
+  TESTS
+ - Logger: Send a request and check the request.log file for any changes.
+ - Error Handler: Put a test error to trigger the error response and see if it is reacting.
+ - Sanitize: Sending HTML or script tags in the URL or body.
+MIDDLEWARE
+ - Express.json() - reads JSON from te incoming requests.
+ - Logger: logs all the requests.
+ - SanitizePar: cleans up parameters of routes.
+ - Route Handler - sends responses.
+ - Error Handler: responds to errors.
