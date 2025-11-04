@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<h2>Shopping List</h2>
+<div class="cards">
+  <% listItems.forEach(item => { %>
+    <div class="card">
+      <h3><%= item.itemName %></h3>
+      <p>Section: <%= item.section %></p>
+      <p>Price: $<%= item.price.toFixed(2) %></p>
+      <a href="/item/<%= item.id %>">View Item</a>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('partials/footer') %>
+
