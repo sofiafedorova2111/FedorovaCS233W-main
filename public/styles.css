@@ -1,0 +1,57 @@
+h2{
+  color:#083d77;
+  font-size:50px;
+  text-align:center;
+  padding:25px;
+}
+
+body{
+    background-color: #eff7cf;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em;
+  }
+  
+  .card {
+    border: 1px solid #b8d8ba;
+    border-radius: 8px;
+    padding: 3em;
+    background-color: #c7eae4;
+    box-shadow: 0 2px 4px #2b4162;
+  }
+
+  .card h3{
+    font-size:30px;
+    color:#2b4162;
+  }
+  .card p{
+    color:black;
+    font-size:20px;
+  }
+
+  .card a{
+    text-decoration:none;
+    color:#5d2a42;
+    font-size:25px;
+
+  }
+
+  .card a:hover {
+   color:lightcoral;
+  }
+
+  footer{
+    font-size:20px;
+    color:#2b4162;
+    text-align:center;
+  }
+  a{
+    text-decoration:none;
+    color:#5d2a42;
+    font-size:20px;
+  }
+  
