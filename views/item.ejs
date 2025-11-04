@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<h2>Item Details</h2>
+<div class="card">
+  <h3><%= item.itemName %></h3>
+  <p>Section: <%= item.section %></p>
+  <p>Price: $<%= item.price.toFixed(2) %></p>
+  <a href="/list">← Back to List</a>
+</div>
+
+<%- include('partials/footer') %>
+
