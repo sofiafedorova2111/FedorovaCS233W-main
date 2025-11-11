@@ -6,11 +6,10 @@ router.get('/', (req, res) => {
   });
   
 
-// GET a single item by ID
+
 router.get('/:id', (req, res) => {
   const itemId = parseInt(req.params.id); 
 
-  // ✅ Use .find() safely on the array
   const item = listOfItems.find(i => i.id === itemId);
 
   if (!item) {
