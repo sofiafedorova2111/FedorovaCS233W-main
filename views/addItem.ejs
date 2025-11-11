@@ -1,0 +1,29 @@
+<%- include('./partials/header') %>
+<body>
+    <header>
+        <h1>Add a Shopping List Product</h1>
+        <h2>And other form practise</h2>
+    </header>
+    <%- include('./partials/nav') %>
+    <main>
+        <form action="/addItem" method="post">
+            <fieldset name="addItem" id="addItem">
+              <legend>Enter Item Details</legend>
+              Item Name: <input type="text" name="itemName" id="itemName" required>
+              <br><br>
+      
+              Quantity: <input type="number" name="quantity" id="quantity" min="1" required>
+              <br><br>
+              Section:
+        <select name="section" id="section">
+          <option value="produce">Produce</option>
+          <option value="dairy">Dairy</option>
+          <option value="meat">Meat</option>
+          <option value="bakery">Bakery</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Add Item">
+      </fieldset>
+     </form>
+    </main>
+</body>

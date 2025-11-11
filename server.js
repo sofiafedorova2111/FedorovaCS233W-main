@@ -1,10 +1,17 @@
 
 
+
 const express = require('express');
+const { body, validationResult } = require('express-validator');
 const app = express();
 const logger = require('./middleware/logger');
 const sanitizeHTML = require('sanitize-html');
 const sanitizePar = require('./middleware/sanitize');
+
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+
 
 const AppName = 'WeBuy';
 

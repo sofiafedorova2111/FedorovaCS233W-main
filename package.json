@@ -4,7 +4,8 @@
   "description": "Shoppinglist",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/sofiafedorova2111/CS233W-HW1#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "express-validator": "^7.3.0",
     "sanitize-html": "^2.17.0"
-  }
+  },
+  "keywords": []
 }
