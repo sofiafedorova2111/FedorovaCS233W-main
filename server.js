@@ -5,7 +5,7 @@ const app = express();
 const logger = require('./middleware/logger');
 const sanitizeHTML = require('sanitize-html');
 const sanitizePar = require('./middleware/sanitize');
-
+app.use(express.static('public'));
 const AppName = 'WeBuy';
 
 app.use(express.json());
