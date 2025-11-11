@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
     itemName: listItem,
     section,
     price,
-    coupon: coupon || false
+    coupon: true || false
   };
 
   listOfItems.push(newItem);
