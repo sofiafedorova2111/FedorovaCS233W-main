@@ -1,12 +1,17 @@
-<%- include('partials/header') %>
+<%- include('partials/header', { title: title }) %>
+<body>
 
-<h2>Item Details</h2>
-<div class="card">
-  <h3><%= item.itemName %></h3>
-  <p>Section: <%= item.section %></p>
-  <p>Price: $<%= item.price.toFixed(2) %></p>
+  <h2>Item Details</h2>
+  <div class="card">
+    <h3><%= item.itemName %></h3>
+    <p>Section: <%= item.section %></p>
+    <p>Price: $<%= item.price.toFixed(2) %></p>
+    <p>Coupon: <%= item.coupon ? "Yes" : "No" %></p>
+  </div>
+
   <a href="/list">← Back to List</a>
-</div>
+  <footer>© Sofia Fedorova</footer>
+</body>
+</html>
 
-<%- include('partials/footer') %>
 

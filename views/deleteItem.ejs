@@ -1,0 +1,21 @@
+<%- include('partials/header', { title: title }) %>
+<body>
+  <h2>Select an Item to Delete</h2>
+
+  <form action="/deleteItem" method="POST">
+    <label for="itemId">Choose an item:</label>
+    <select name="itemId" id="itemId" required>
+        <% listItems.forEach(item => { %>
+          <option value="<%= item.id %>">
+            <%= item.itemName %> — $<%= item.price.toFixed(2) %>
+          </option>
+        <% }) %>
+      </select>
+      
+
+    <button type="submit">Delete Item</button>
+  </form>
+
+  <footer>© Sofia Fedorova</footer>
+</body>
+</html>

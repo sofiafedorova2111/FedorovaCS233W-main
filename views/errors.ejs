@@ -1,0 +1,11 @@
+<%- include('partials/header', { title: 'Error' }) %>
+<body>
+  <h2>We encountered some issues:</h2>
+  <ul>
+    <% errorArray.forEach(error => { %>
+      <li><%= error.msg %></li>
+    <% }) %>
+  </ul>
+  <a href="<%= urlPath %>">Please try again</a>
+</body>
+</html>

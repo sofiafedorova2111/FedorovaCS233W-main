@@ -1,15 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const listOfItems = require('../data');
-router.get('/', (req, res) => {
-    res.json(listOfItems);
-  });
-  
 
+router.get('/', (req, res) => {
+  res.json(listOfItems);
+});
 
 router.get('/:id', (req, res) => {
-  const itemId = parseInt(req.params.id); 
-
+  const itemId = parseInt(req.params.id);
   const item = listOfItems.find(i => i.id === itemId);
 
   if (!item) {
@@ -18,7 +16,6 @@ router.get('/:id', (req, res) => {
 
   res.json(item);
 });
-
 
 router.post('/', (req, res) => {
   const { listItem, section, price, coupon } = req.body;
